@@ -1,0 +1,34 @@
+1) Cai Dat Xampp / warm
+2) Cai Dat ban CodeIgniter
+3) Tao File .httaccess
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule ^(.*)$ index.php/$1 [L]
+4) Application/config/config.php
+	$config['base_url'] = 'http://localhost:8080/TucSo';
+
+	# Xoa Index.php
+	$config['index_page'] = '';
+
+	$config['uri_protocol']	= 'REQUEST_URI';
+
+5) Application/config/routes.php
+	Chinh Cau hinh duong dan ngan (sort link)
+
+6) Application/config/autoload.php
+	$autoload['helper'] = array();
+	# replace
+	$autoload['helper'] = array('form', 'url');
+
+	# de thiet lap cho base_url() chay
+
+	$autoload['libraries'] = array();
+	# replace
+	$autoload['libraries'] = array('database', 'form_validation', 'pagination', 'my_customs');
+Cau Truc chay
+
+http://domain.com/Controller/function

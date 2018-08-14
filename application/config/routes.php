@@ -52,14 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['Buddhas/index'] = 'Buddhas/index';
 $route['Buddhas/create'] = 'Buddhas/create';
 $route['Buddhas/update'] = 'Buddhas/update';
-$route['Buddhas/delete/'] = 'Buddhas/create';
+$route['Buddhas/delete/'] = 'Buddhas/delete';
 $route['Buddhas/(:any)'] = 'Buddhas/view/$1';
 $route['Buddhas'] = 'Buddhas/index';
+
+$route['favorites/nhaptucso(:any)'] = 'favorites/nhaptucso/$1';
+$route['favorites/delete/(:any)'] = 'favorites/delete/$1';
+$route['favorites'] = 'favorites/index';
 
 $route['posts/create'] = 'posts/create';
 $route['posts/(:any)'] = 'posts/view/$1';
 $route['posts'] = 'posts/index';
-$route['posts/(:any)'] = 'posts/view/$1';
 
 $route['users/login'] = 'users/login';
 $route['users'] = 'users/view';

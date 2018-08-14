@@ -1,3 +1,12 @@
+### CAI DAT CHAY LOCAL BANG TEN AO ####
+B1: C:\xampp\apache\conf\extra\httpd-vhosts.conf
+	<VirtualHost *:80>
+    		DocumentRoot "C:/xampp/htdocs/TucSo"
+    		ServerName tucso.dev
+	</VirtualHost>
+B2: C:\Windows\System32\drivers\et\hosts
+	127.0.0.1 tucso.dev
+
 1) Cai Dat Xampp / warm
 2) Cai Dat ban CodeIgniter
 3) Tao File .httaccess

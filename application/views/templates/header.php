@@ -100,6 +100,19 @@
                 echo '<p class="alert alert-danger">' . $this->session->flashdata('favorite_failed') . '</p>';
             endif;
             ?>
+            
+            
+            <?php 
+            if($this->session->flashdata('times_add')):
+                echo '<p class="alert alert-success">' . $this->session->flashdata('times_add') . '</p>';
+            endif;
+            ?>
+            <?php 
+            if($this->session->flashdata('times_failed')):
+                echo '<p class="alert alert-danger">' . $this->session->flashdata('times_failed') . '</p>';
+            endif;
+            ?>
+            
             <div class="ui-widget">
                 <!--<label for="tags">Tags: </label>
                 <input id="tags">-->
